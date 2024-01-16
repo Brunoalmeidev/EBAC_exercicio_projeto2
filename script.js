@@ -12,13 +12,24 @@ form.addEventListener('submit', function(e) {
 function adicionaLinha() {
     const inputContact = document.getElementById('add-contact');
     const inputNumber = document.getElementById('number-contact');
+    const errorMessage = document.querySelector('.error-message');
 
+    console.log('Contatos existentes:', contatos);
+
+    // Verifica se o contato já existe
     if (contatos.includes(inputContact.value)) {
-        document.querySelector('.error.message').style.display = 'block';
+        errorMessage.style.display = 'block';
     } else {
+        // Adiciona o novo contato à lista
         contatos.push(inputContact.value);
 
+        // Crie uma string HTML para a nova linha da tabela
         const novaLinha = '<tr><td>' + inputContact.value + '</td><td>' + inputNumber.value + '</td></tr>';
+
+        // Adicione a nova linha à variável 'linhas'
+        linhas += novaLinha;
+
+        errorMessage.style.display = 'none';
     }
 
     inputContact.value = '';
@@ -26,7 +37,7 @@ function adicionaLinha() {
 }
 
 function atualizaTabela() {
-    const corpoTabela = document.querySelector('tbody')
+    const corpoTabela = document.querySelector('tbody');
     corpoTabela.innerHTML = linhas;
 }
 
@@ -36,5 +47,5 @@ function handleSubmit(e) {
 
     setTimeout(() => {
         errorMessage.style.display = 'none';
-    }, 6000);
+    }, 5000);
 }

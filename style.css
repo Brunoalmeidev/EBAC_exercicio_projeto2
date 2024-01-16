@@ -35,6 +35,8 @@ form {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 10px;
 }
 
 form input {
@@ -61,7 +63,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
 }
 
 th, td {
@@ -81,10 +83,8 @@ th {
     border-radius: 5px;
     margin: 10px 0;
     text-align: center;
-}
-
-.error-message br {
     display: none;
+    resize: none;
 }
 
 .error-message a:link {
@@ -96,6 +96,6 @@ th {
 
 @media screen and (max-width: 600px) {
     form {
-        max-width: 100%;
+        grid-template-columns: 1fr;
     }
 }
