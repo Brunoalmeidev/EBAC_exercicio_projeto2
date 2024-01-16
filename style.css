@@ -93,8 +93,9 @@ th {
     cursor: pointer;
 }
 
-@media screen and (max-width: 900px) {
-    form {
-        grid-template-columns: 1fr;
+@media screen and (max-width: 600px) {
+    form input {
+        width: 100%;
+        height: auto;
     }
 }
