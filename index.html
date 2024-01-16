@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <img src="./img/phonebook.png" alt="Imagem icone lista de contatos">
+        <h1>Contatos</h1>
+    </header>
+
+    <form id="form-contact">
+        <input id="add-contact" type="text" placeholder="Nome" autocomplete="off" required>
+        <input id="number-contact" type="tel" placeholder="(11) 9 xxxx-xxxx" autocomplete="off" required>
+        <button>Cadastrar +</button>
+    </form>
+
+    <p class="error-message">Contato existente. <br>
+    </p>Deseja incluir numero adicional?</body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone de contato</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="./script.js"></script>
+</body>
+</html>
