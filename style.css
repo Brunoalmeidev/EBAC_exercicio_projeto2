@@ -6,7 +6,6 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -94,7 +93,7 @@ th {
     cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     form {
         grid-template-columns: 1fr;
     }

@@ -44,8 +44,4 @@ function atualizaTabela() {
 function handleSubmit(e) {
     e.preventDefault();
     const errorMessage = document.querySelector('.error-message');
-
-    setTimeout(() => {
-        errorMessage.style.display = 'none';
-    }, 5000);
 }
